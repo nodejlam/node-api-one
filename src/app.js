@@ -5,7 +5,7 @@ const router = require('./routes');
 const errorHandler = require('./utils/errorHandler');
 require('dotenv').config();
 
-// Esta es nuestra aplicación
+// this is the app
 const app = express();
 
 // Middlewares 
@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
     return res.send("Welcome to express!");
 })
 
-// middlewares después de las rutas
+// middlewares after routes
 app.use(errorHandler)
 
 module.exports = app;

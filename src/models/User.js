@@ -1,8 +1,8 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/connection'); 
-   // En Mayúsculas y singular      // en minúsculas y singular
+   // first letter of model in capital letter and singular      //  singular and all lower case
 const User = sequelize.define('user', {
-    // Definimos las columnas aquí
+    // define columns
     firstName: {
         type: DataTypes.STRING,
         allowNull: false
